@@ -1,0 +1,26 @@
+.container{
+    width: 1440px;
+    height: 696px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.gallery{
+    padding: 24px 156px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+.gallery-image{
+    display: block;
+    width: 360px;
+    height: 200px;
+    object-fit: cover;
+    transition: 200ms all ease-in-out;
+}
+.gallery-image:hover{
+    scale: 1.03;
+}
