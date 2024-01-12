@@ -19,10 +19,12 @@ const markup = images
 
 gallery.insertAdjacentHTML('afterbegin', markup);
 
+
 let lightbox = new SimpleLightbox('.gallery a', {
-
+    captions: true,
+    captionsData: 'alt',
+    captionsPosition: 'bottom',
+    captionsDellay: 250,
 });
 
-lightbox.on('show.simplelightbox', function () {
-
-});
+lightbox.show();
